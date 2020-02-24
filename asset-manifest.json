@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/xujiaqi/static/css/main.79494e75.chunk.css",
+    "main.js": "/xujiaqi/static/js/main.071753e9.chunk.js",
+    "main.js.map": "/xujiaqi/static/js/main.071753e9.chunk.js.map",
+    "runtime-main.js": "/xujiaqi/static/js/runtime-main.09b2192d.js",
+    "runtime-main.js.map": "/xujiaqi/static/js/runtime-main.09b2192d.js.map",
+    "static/js/2.3b464f16.chunk.js": "/xujiaqi/static/js/2.3b464f16.chunk.js",
+    "static/js/2.3b464f16.chunk.js.map": "/xujiaqi/static/js/2.3b464f16.chunk.js.map",
+    "index.html": "/xujiaqi/index.html",
+    "precache-manifest.54ec4fefbc578a7c5dd6e1473e636344.js": "/xujiaqi/precache-manifest.54ec4fefbc578a7c5dd6e1473e636344.js",
+    "service-worker.js": "/xujiaqi/service-worker.js",
+    "static/css/main.79494e75.chunk.css.map": "/xujiaqi/static/css/main.79494e75.chunk.css.map",
+    "static/js/2.3b464f16.chunk.js.LICENSE.txt": "/xujiaqi/static/js/2.3b464f16.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b2192d.js",
+    "static/js/2.3b464f16.chunk.js",
+    "static/css/main.79494e75.chunk.css",
+    "static/js/main.071753e9.chunk.js"
+  ]
+}
