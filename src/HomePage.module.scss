@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700|Heebo:100,300,400,500,700,800,900|Lato:100,300,400,700,900&display=swap');
+
+$font-stack1:'Heebo','Helvetica','Arial', sans-serif;
+$font-stack2:'Lato','Helvetica Neue','Arial', sans-serif;
+$font-stack3:'Segoe UI','Roboto', 'Oxygen','Helvetica Neue','Arial', sans-serif;
+$font-stack4:'Cardo',serif;
+
+$contentHeight:85vh;
+
+$containerWidth:75%;
+
+$textsidePaddingRight:5%;
+
+$imagesideGapSize:1rem;
+
+@mixin projectWrap{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+  background-size: cover;
+  background-position: center;
+};
+
+.container{
+  width: $containerWidth;
+}
+
+.content{
+  height:$contentHeight;
+  margin-top:(100-$contentHeight)/2;
+  font-family: $font-stack3;
+}
+
+
+.textSide{
+  color:#333;
+  padding-right: $textsidePaddingRight;
+  margin-bottom: 6rem;
+  h1{
+    margin-bottom: 2rem;
+  };
+  p{
+    margin-top: 0.5rem;
+  };
+  .resumebutton {
+    margin-top: 2rem;
+    width: 6rem;
+    color:#777;
+    border:1px solid #777;
+    &:hover,
+    &:active{
+      color:white;
+      border:1px solid #777;
+      background-color: #777;;
+    }
+  };
+}
+
+.imageSide{
+  display: grid;
+  height: 100%;
+  grid-template:repeat(2, 1fr) / repeat(1, 1fr);
+  gap:$imagesideGapSize;
+  
+  
+  .project{
+    background-color:#333;
+    position: relative;
+    &:hover{
+      .projectTextWrap{
+        opacity: 1;
+      };
+      .memorygame{
+        opacity: 0.5;
+      };
+      .ontheroad{
+        opacity: 0.5;
+      };
+
+    }
+      
+    .projectTextWrap{
+      position: absolute;
+      top:0;
+      margin:30px 40px auto 40px;
+      opacity: 0;
+      transition: opacity 1s;
+      .projectText{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color:#f8f8f8;
+        span{
+          font-family: $font-stack4;
+          font-weight: 700;
+          font-size: 105%;
+        };
+        div{
+          display: flex;
+        };
+      };
+    };
+  };
+};
+
+.ontheroad{
+  background: url(./resources/images/screenshotOntheroad.jpg);
+  @include projectWrap;
+}
+
+.memorygame{
+  background: url(./resources/images/MemoryGame.jpg);
+  @include projectWrap;
+};
+
+.buttonoverimage{
+  border-radius: 0;
+  padding: 0.1rem 0.8rem 0.1rem 0.8rem;
+  margin-right: 1.5rem;;
+}
+
+@media (min-width: 992px) {
+ 
+};
+
+@media (min-width: 768px) {
+  .projectTextWrap{
+    width: 40%;
+  };
+};
+
+@media (min-width: 576px){
+
+};
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
