@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb146d7f2577926393f28b66ab31f548",
+    "revision": "1f4f002c86cb135491e1fe1b789ff04e",
     "url": "/xujiaqi/index.html"
   },
   {
-    "revision": "7428cb19000d80afd6c2",
+    "revision": "b0e0bd5cfb0e5d07aed5",
     "url": "/xujiaqi/static/css/main.e41cb957.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xujiaqi/static/js/2.e2ba5290.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7428cb19000d80afd6c2",
-    "url": "/xujiaqi/static/js/main.615946ef.chunk.js"
+    "revision": "b0e0bd5cfb0e5d07aed5",
+    "url": "/xujiaqi/static/js/main.e6e50764.chunk.js"
   },
   {
     "revision": "05fa90a1e303b8c83166",
